@@ -2,9 +2,9 @@
 {
     public class TreeDecorator :IChristmasTree
     {
-        private ChristmasTreeImplementation _tree;
+        private IChristmasTree _tree;
 
-        public TreeDecorator(ChristmasTreeImplementation tree)
+        public TreeDecorator(IChristmasTree tree)
         {
             _tree = tree;
         }
