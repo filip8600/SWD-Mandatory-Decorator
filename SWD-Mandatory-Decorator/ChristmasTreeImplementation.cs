@@ -7,12 +7,4 @@
             return "I am a Christmas tree";
         }
     }
-
-    public class ChristmasLights : TreeDecorator
-    {
-        public string Decorate()
-        {
-            return base.Decorate() + "Here, have some candles ";
-        }
-    }
 }
