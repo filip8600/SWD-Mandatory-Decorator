@@ -7,7 +7,7 @@
             return base.Decorate() + "Here, have some candles ";
         }
 
-        public ChristmasLights(ChristmasTreeImplementation tree) : base(tree)
+        public ChristmasLights(IChristmasTree tree) : base(tree)
         {
         }
     }
