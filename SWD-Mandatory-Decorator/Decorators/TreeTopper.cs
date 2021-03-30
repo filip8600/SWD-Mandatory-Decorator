@@ -4,14 +4,14 @@
     {
         public override string Decorate()
         {
-            return base.Decorate() + decorateWithTreeTopper();
+            return base.Decorate() + DecorateWithTreeTopper();
         }
 
         public TreeTopper(IChristmasTree tree) : base(tree)
         {
         }
 
-        private string decorateWithTreeTopper()
+        private string DecorateWithTreeTopper()
         {
             return "Here, have a pretty star. ";
         }
