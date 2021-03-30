@@ -1,0 +1,31 @@
+﻿
+frame ChristmasTreeDecorator 
+participant main
+participant "ChristmasTreeImplementation\n:IChristmasTree" as cti
+participant "Christmaslight\n:TreeDecorator" as cl
+participant "TreeDecorator\n:IChristmastree" as td
+
+autoactivation on
+
+activate main
+main->cti:Constructor()
+cti-->main:ChristmasTreeImplematation
+main->cl:Constructor(ChristmasTreeImplematation)
+
+cl->td:Constructor(ChristmasTreeImplematation)
+autoactivation off
+td->td:Save Reference
+autoactivation on
+td-->cl:TreeDecorator
+cl-->main:ChristmasLight
+
+
+main->cl:Decorate
+cl->td:Decorate
+
+td->cti:Decorate()
+cti-->td:string
+td-->cl:string
+cl-->main:string
+autoactivation off
+main->main:Console.WriteLine(string)
