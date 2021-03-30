@@ -1,4 +1,5 @@
 ﻿using System;
+using SWD_Mandatory_Decorator.Decorators;
 
 namespace SWD_Mandatory_Decorator
 {
@@ -8,7 +9,7 @@ namespace SWD_Mandatory_Decorator
         {
             Console.WriteLine("Welcome to the christmas wonderland!");
             IChristmasTree tree = new ChristmasLights(new ChristmasTreeImplementation());
-            IChristmasTree tree2 = new ChristmasLights(new TreeTopper( new ChristmasTreeImplementation()));
+            IChristmasTree tree2 = new ChristmasLights(new TreeTopper(new Tinsel( new ChristmasTreeImplementation())));
             Console.WriteLine(tree2.Decorate() ); 
 
         }

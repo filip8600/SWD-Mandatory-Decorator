@@ -8,7 +8,7 @@ namespace SWD_Mandatory_Decorator.Decorators
     {
         public override string Decorate()
         {
-            return base.Decorate() + "The tree blooms like the Lotus Flower with this Tinsel I just added!";
+            return base.Decorate() + "The tree blooms like the Lotus Flower with this Tinsel I just added! \n";
         }
 
         public Tinsel(ChristmasTreeImplementation tree) : base(tree)
