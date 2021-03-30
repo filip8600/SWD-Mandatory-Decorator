@@ -13,7 +13,7 @@ namespace SWD_Mandatory_Decorator.Decorators
 
         public string decorateWithFlags()
         {
-            return "- You might not be Danish, but here are some pretty flags. ";
+            return "You might not be Danish, but here are some pretty flags. ";
         }
 
         public FlagGarland(IChristmasTree tree) : base(tree)
