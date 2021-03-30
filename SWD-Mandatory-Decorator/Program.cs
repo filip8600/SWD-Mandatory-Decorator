@@ -9,10 +9,10 @@ namespace SWD_Mandatory_Decorator
         {
             Console.WriteLine("Welcome to the christmas wonderland!");
             IChristmasTree tree = new ChristmasLights(new ChristmasTreeImplementation());
-            Console.WriteLine(tree);
+            Console.WriteLine(tree.Decorate());
             
             IChristmasTree tree2 = new ChristmasLights(new TreeTopper( new ChristmasTreeImplementation()));
-            Console.WriteLine(tree2);
+            Console.WriteLine(tree2.Decorate());
             
 
             IChristmasTree tree3 = new ChristmasLights(new TreeTopper( new FlagGarland(new ChristmasTreeImplementation())));
