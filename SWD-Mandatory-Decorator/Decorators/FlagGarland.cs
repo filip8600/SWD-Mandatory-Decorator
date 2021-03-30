@@ -8,10 +8,10 @@ namespace SWD_Mandatory_Decorator.Decorators
     {
         public override string Decorate()
         {
-            return base.Decorate() + decorateWithFlagGarland();
+            return base.Decorate() + DecorateWithFlagGarland();
         }
 
-        private string decorateWithFlagGarland()
+        private string DecorateWithFlagGarland()
         {
             return "You might not be Danish, but here are some pretty flags. ";
         }

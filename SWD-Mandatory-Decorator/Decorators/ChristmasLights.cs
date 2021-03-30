@@ -4,10 +4,10 @@
     {
         public override string Decorate()
         {
-            return base.Decorate() + decorateWithChristmasLights();
+            return base.Decorate() + DecorateWithChristmasLights();
         }
 
-        private string decorateWithChristmasLights()
+        private string DecorateWithChristmasLights()
         {
             return "Here, have some candles.";
         }

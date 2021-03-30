@@ -2,7 +2,7 @@
 {
     public class TreeDecorator :IChristmasTree
     {
-        private IChristmasTree _tree;
+        private readonly IChristmasTree _tree;
 
         public TreeDecorator(IChristmasTree tree)
         {
