@@ -4,7 +4,7 @@
     {
         public string Decorate()
         {
-            return "I am a Christmas tree";
+            return "I am a Christmas tree. ";
         }
     }
 }

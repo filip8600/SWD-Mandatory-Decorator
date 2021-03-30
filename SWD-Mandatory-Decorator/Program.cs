@@ -6,7 +6,10 @@ namespace SWD_Mandatory_Decorator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Welcome to the christmas wonderland!");
+            IChristmasTree tree = new ChristmasLights(new ChristmasTreeImplementation());
+           Console.WriteLine(tree.Decorate() ); 
+
         }
     }
 }

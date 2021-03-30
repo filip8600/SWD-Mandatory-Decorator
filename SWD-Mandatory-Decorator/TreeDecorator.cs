@@ -9,7 +9,7 @@
             _tree = tree;
         }
 
-        public string Decorate()
+        public virtual string Decorate()
         {
             return _tree.Decorate();
         }

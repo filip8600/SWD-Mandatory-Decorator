@@ -2,7 +2,7 @@
 {
     public class ChristmasLights : TreeDecorator
     {
-        public string Decorate()
+        public override string Decorate()
         {
             return base.Decorate() + "Here, have some candles ";
         }
