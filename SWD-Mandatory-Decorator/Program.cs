@@ -16,7 +16,10 @@ namespace SWD_Mandatory_Decorator
             
 
             IChristmasTree tree3 = new ChristmasLights(new TreeTopper( new FlagGarland(new ChristmasTreeImplementation())));
-            Console.WriteLine(tree3.Decorate()); 
+            Console.WriteLine(tree3.Decorate());
+
+            IChristmasTree tree4 = new ChristmasLights(new TreeTopper(new FlagGarland(new Tinsel(new ChristmasTreeImplementation()))));
+            Console.WriteLine(tree4.Decorate());
 
         }
     }
