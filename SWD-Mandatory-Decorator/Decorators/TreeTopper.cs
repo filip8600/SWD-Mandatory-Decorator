@@ -7,7 +7,7 @@
             return base.Decorate() + "Here, have a pretty star ";
         }
 
-        public TreeTopper(ChristmasTreeImplementation tree) : base(tree)
+        public TreeTopper(IChristmasTree tree) : base(tree)
         {
         }
     }
