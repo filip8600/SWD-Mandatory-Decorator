@@ -11,7 +11,7 @@
 
         public string Decorate()
         {
-            return "More Beautiful";
+            return _tree.Decorate();
         }
     }
 }
