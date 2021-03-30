@@ -2,7 +2,7 @@
 
 namespace SWD_Mandatory_Decorator
 {
-    class Program
+    partial class Program
     {
         static void Main(string[] args)
         {
