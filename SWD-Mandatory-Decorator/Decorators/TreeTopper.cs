@@ -4,7 +4,7 @@
     {
         public override string Decorate()
         {
-            return base.Decorate() + "Here, have a pretty star ";
+            return base.Decorate() + "Here, have a pretty star. ";
         }
 
         public TreeTopper(IChristmasTree tree) : base(tree)
